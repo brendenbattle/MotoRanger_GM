@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		279C5334CCE64F7FBB4CADEB /* Pods_MotoRangerGM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76763021DD970C2BA4A93B79 /* Pods_MotoRangerGM.framework */; };
 		E0C6C6FF1E0247F9008A3804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C6FE1E0247F9008A3804 /* AppDelegate.swift */; };
-		E0C6C7011E0247F9008A3804 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C7001E0247F9008A3804 /* ViewController.swift */; };
+		E0C6C7011E0247F9008A3804 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C7001E0247F9008A3804 /* MapVC.swift */; };
 		E0C6C7041E0247F9008A3804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C6C7021E0247F9008A3804 /* Main.storyboard */; };
 		E0C6C7061E0247F9008A3804 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0C6C7051E0247F9008A3804 /* Assets.xcassets */; };
 		E0C6C7091E0247F9008A3804 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C6C7071E0247F9008A3804 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		76763021DD970C2BA4A93B79 /* Pods_MotoRangerGM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotoRangerGM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A690563D71CD85244FDF8023 /* Pods-MotoRangerGM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoRangerGM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotoRangerGM/Pods-MotoRangerGM.debug.xcconfig"; sourceTree = "<group>"; };
 		E0C6C6FB1E0247F9008A3804 /* MotoRangerGM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotoRangerGM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C6C6FE1E0247F9008A3804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E0C6C7001E0247F9008A3804 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E0C6C7001E0247F9008A3804 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		E0C6C7031E0247F9008A3804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E0C6C7051E0247F9008A3804 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0C6C7081E0247F9008A3804 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0C6C70A1E0247F9008A3804 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9837480B0BA1F04A35198A2 /* Pods-MotoRangerGM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoRangerGM.release.xcconfig"; path = "Pods/Target Support Files/Pods-MotoRangerGM/Pods-MotoRangerGM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				279C5334CCE64F7FBB4CADEB /* Pods_MotoRangerGM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		705FDBED325FC744F1113841 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				76763021DD970C2BA4A93B79 /* Pods_MotoRangerGM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E0C6C6F21E0247F9008A3804 = {
 			isa = PBXGroup;
 			children = (
 				E0C6C6FD1E0247F9008A3804 /* MotoRangerGM */,
 				E0C6C6FC1E0247F9008A3804 /* Products */,
+				E70AA19B7540B682C16D18A9 /* Pods */,
+				705FDBED325FC744F1113841 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +70,22 @@
 			isa = PBXGroup;
 			children = (
 				E0C6C6FE1E0247F9008A3804 /* AppDelegate.swift */,
-				E0C6C7001E0247F9008A3804 /* ViewController.swift */,
+				E0C6C7001E0247F9008A3804 /* MapVC.swift */,
 				E0C6C7021E0247F9008A3804 /* Main.storyboard */,
 				E0C6C7051E0247F9008A3804 /* Assets.xcassets */,
 				E0C6C7071E0247F9008A3804 /* LaunchScreen.storyboard */,
 				E0C6C70A1E0247F9008A3804 /* Info.plist */,
 			);
 			path = MotoRangerGM;
+			sourceTree = "<group>";
+		};
+		E70AA19B7540B682C16D18A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A690563D71CD85244FDF8023 /* Pods-MotoRangerGM.debug.xcconfig */,
+				E9837480B0BA1F04A35198A2 /* Pods-MotoRangerGM.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E0C6C70D1E0247F9008A3804 /* Build configuration list for PBXNativeTarget "MotoRangerGM" */;
 			buildPhases = (
+				DE49C53D79552221261C1EA7 /* [CP] Check Pods Manifest.lock */,
 				E0C6C6F71E0247F9008A3804 /* Sources */,
 				E0C6C6F81E0247F9008A3804 /* Frameworks */,
 				E0C6C6F91E0247F9008A3804 /* Resources */,
+				4005683F169A47EEDB5203EE /* [CP] Embed Pods Frameworks */,
+				8A5AA61D5D56E390BCB7E9A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -132,12 +159,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4005683F169A47EEDB5203EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotoRangerGM/Pods-MotoRangerGM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A5AA61D5D56E390BCB7E9A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MotoRangerGM/Pods-MotoRangerGM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE49C53D79552221261C1EA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E0C6C6F71E0247F9008A3804 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0C6C7011E0247F9008A3804 /* ViewController.swift in Sources */,
+				E0C6C7011E0247F9008A3804 /* MapVC.swift in Sources */,
 				E0C6C6FF1E0247F9008A3804 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +334,7 @@
 		};
 		E0C6C70E1E0247F9008A3804 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A690563D71CD85244FDF8023 /* Pods-MotoRangerGM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HE7TTXQ758;
@@ -272,6 +348,7 @@
 		};
 		E0C6C70F1E0247F9008A3804 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9837480B0BA1F04A35198A2 /* Pods-MotoRangerGM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HE7TTXQ758;
@@ -302,6 +379,7 @@
 				E0C6C70F1E0247F9008A3804 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
