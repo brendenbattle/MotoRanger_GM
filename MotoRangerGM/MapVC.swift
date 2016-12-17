@@ -37,7 +37,7 @@ class MapVC: UIViewController {
         // Setup mapView
         let camera = GMSCameraPosition.camera(withLatitude: defaultLocation.coordinate.latitude, longitude: defaultLocation.coordinate.longitude, zoom: zoomLevel)
         mapView = GMSMapView.map(withFrame: view.bounds, camera: camera)
-        mapView.mapType = kGMSTypeTerrain
+        mapView.mapType = kGMSTypeNormal
         mapView.isMyLocationEnabled = true
         mapView.settings.myLocationButton = true
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -48,7 +48,26 @@ class MapVC: UIViewController {
 //        view.addSubview(mapView)
 //        mapView.isHidden = true
         
+        // json mapstyle. Should this be in a different view file?
+            do {
+                // Set the map style by passing the URL of the local file.
+                if let styleURL = Bundle.main.url(forResource: "style", withExtension: "json") {
+                    mapView.mapStyle = try GMSMapStyle(contentsOfFileURL: styleURL)
+                    print("mapstyle worked!")
+                } else {
+                    NSLog("Unable to find style.json")
+                    print("mapstyle no working")
+                    
+                }
+            } catch {
+                NSLog("One or more of the map styles failed to load. \(error)")
+                print("mapstyle no working")
+            }
+            self.view = mapView
         }
+    
+    
+
         // Add markers for places nearby. Later change or add markers that user logs.
         func updateMarkers() {
             mapView.clear()

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		279C5334CCE64F7FBB4CADEB /* Pods_MotoRangerGM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76763021DD970C2BA4A93B79 /* Pods_MotoRangerGM.framework */; };
+		E07F00641E051ACB00A25D22 /* style.json in Resources */ = {isa = PBXBuildFile; fileRef = E07F00631E051ACB00A25D22 /* style.json */; };
+		E07F00681E051B6800A25D22 /* MapStyleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E07F00671E051B6800A25D22 /* MapStyleVC.swift */; };
 		E0C6C6FF1E0247F9008A3804 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C6FE1E0247F9008A3804 /* AppDelegate.swift */; };
 		E0C6C7011E0247F9008A3804 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0C6C7001E0247F9008A3804 /* MapVC.swift */; };
 		E0C6C7041E0247F9008A3804 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0C6C7021E0247F9008A3804 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* Begin PBXFileReference section */
 		76763021DD970C2BA4A93B79 /* Pods_MotoRangerGM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MotoRangerGM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A690563D71CD85244FDF8023 /* Pods-MotoRangerGM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MotoRangerGM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MotoRangerGM/Pods-MotoRangerGM.debug.xcconfig"; sourceTree = "<group>"; };
+		E07F00631E051ACB00A25D22 /* style.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = style.json; sourceTree = "<group>"; };
+		E07F00671E051B6800A25D22 /* MapStyleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapStyleVC.swift; sourceTree = "<group>"; };
 		E0C6C6FB1E0247F9008A3804 /* MotoRangerGM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotoRangerGM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0C6C6FE1E0247F9008A3804 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0C6C7001E0247F9008A3804 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -48,6 +52,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E07F00651E051B3B00A25D22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E07F00661E051B4C00A25D22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E07F00671E051B6800A25D22 /* MapStyleVC.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		E0C6C6F21E0247F9008A3804 = {
 			isa = PBXGroup;
 			children = (
@@ -69,7 +88,10 @@
 		E0C6C6FD1E0247F9008A3804 /* MotoRangerGM */ = {
 			isa = PBXGroup;
 			children = (
+				E07F00661E051B4C00A25D22 /* View */,
+				E07F00651E051B3B00A25D22 /* Model */,
 				E0C6C6FE1E0247F9008A3804 /* AppDelegate.swift */,
+				E07F00631E051ACB00A25D22 /* style.json */,
 				E0C6C7001E0247F9008A3804 /* MapVC.swift */,
 				E0C6C7021E0247F9008A3804 /* Main.storyboard */,
 				E0C6C7051E0247F9008A3804 /* Assets.xcassets */,
@@ -154,6 +176,7 @@
 				E0C6C7091E0247F9008A3804 /* LaunchScreen.storyboard in Resources */,
 				E0C6C7061E0247F9008A3804 /* Assets.xcassets in Resources */,
 				E0C6C7041E0247F9008A3804 /* Main.storyboard in Resources */,
+				E07F00641E051ACB00A25D22 /* style.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +236,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0C6C7011E0247F9008A3804 /* MapVC.swift in Sources */,
+				E07F00681E051B6800A25D22 /* MapStyleVC.swift in Sources */,
 				E0C6C6FF1E0247F9008A3804 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
