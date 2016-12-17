@@ -9,5 +9,5 @@ target 'MotoRangerGM' do
   # Pods for MotoRangerGM
     pod 'GoogleMaps'
     pod 'GooglePlaces'
-
+    pod 'GooglePlacePicker'
 end
